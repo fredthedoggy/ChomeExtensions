@@ -136,11 +136,6 @@ GameManager.prototype.fillLegend = function () {
   var legend = document.getElementsByClassName("tile-legend");
   for (var i = 1; i <= 13; i++) {
     var exp = Math.pow(2, i);
-    var row = document.createElement("div");
-    var grid = document.createElement("div");
-    var cell = document.createElement("div");
-    var img = document.createElement("img");
-    var p = document.createElement("p");
     img.src = "style/img/" + exp + ".jpg";
     cell.appendChild(img);
     grid.appendChild(cell);
