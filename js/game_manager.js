@@ -135,12 +135,6 @@ GameManager.prototype.fillLegend = function () {
 
   var legend = document.getElementsByClassName("tile-legend");
   for (var i = 1; i <= 13; i++) {
-    var exp = Math.pow(2, i);
-    img.src = "style/img/" + exp + ".jpg";
-    cell.appendChild(img);
-    grid.appendChild(cell);
-    row.appendChild(grid);
-    p.textContent = Localize(exp) + "  (" + kcal(exp) + " Kcal)";
     row.appendChild(p);
 
     legend[0].appendChild(row);
