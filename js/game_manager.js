@@ -140,7 +140,6 @@ GameManager.prototype.fillLegend = function () {
     var grid = document.createElement("div");
     var cell = document.createElement("div");
     var p = document.createElement("p");
-    img.src = "style/img/" + exp + ".jpg";
     cell.appendChild(img);
     grid.appendChild(cell);
     row.appendChild(grid);
