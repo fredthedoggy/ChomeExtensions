@@ -139,11 +139,20 @@ GameManager.prototype.fillLegend = function () {
     var row = document.createElement("div");
     var grid = document.createElement("div");
     var cell = document.createElement("div");
+    var img = document.createElement("img");
     var p = document.createElement("p");
+    row.classList.add('legend-row');
+    grid.classList.add('legend-grid');
+    cell.classList.add('legend-cell');
+    cell.classList.add('cell-' + exp);
+    img.src = "style/img/" + exp + ".jpg";
     cell.appendChild(img);
     grid.appendChild(cell);
     row.appendChild(grid);
+    p.textContent = Localize(exp) + "  (" + kcal(exp) + " Kcal)";
     row.appendChild(p);
+
+    legend[0].appendChild(row);
   }
 
 };
